@@ -1,0 +1,21 @@
+.filterTitle {
+  color: rgb(83, 89, 89);
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 6px;
+  margin-right: 25px;
+}
+.input {
+  font-size: 18px;
+  background-color: #e0edf0;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+  color: black;
+  caret-color: #090909;
+}
+
+.input:focus {
+  outline: none;
+}

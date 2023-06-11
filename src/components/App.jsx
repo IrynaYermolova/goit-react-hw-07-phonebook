@@ -1,7 +1,3 @@
-
-// import {Form } from './Form/Form';
-// import  ContactList  from './ContactList/ContactsList';
-// import { Filter } from './Filter/Filter';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectError, selectIsLoading } from 'redux/contacts/contactSelectors';
 import { useEffect } from 'react';
@@ -20,14 +16,12 @@ export const App = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
   return (
-   <div className={css.container}>
+    <div className={css.container}>
       <h1>Phonebook</h1>
       <Form />
       <h2>Contacts</h2>
       <Filter />
       {(isLoading && !error) || <ContactList />}
-     
     </div>
-  
-)
-  }
+  );
+};
